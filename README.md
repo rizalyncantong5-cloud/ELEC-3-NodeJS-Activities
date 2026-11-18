@@ -12,15 +12,21 @@
 
 \## Overview
 
+
+
 This repository contains my completed Node.js activities, from project setup to middleware and REST API development.
 
 
 
-\## Activities
+\## Set 1 – Activities N1 to N3
 
 
 
 \### N1 – Project Setup and Package Management
+
+Folder: `set1/n1-setup`
+
+
 
 \- Created a Node.js project.
 
@@ -32,6 +38,10 @@ This repository contains my completed Node.js activities, from project setup to 
 
 \### N2 – Node.js Modules
 
+Folder: `set1/n2-calculator`
+
+
+
 \- Practiced creating and importing modules.
 
 \- Developed a modular calculator.
@@ -42,6 +52,10 @@ This repository contains my completed Node.js activities, from project setup to 
 
 \### N3 – Utility Modules
 
+Folder: `set1/n3-file-manager`
+
+
+
 \- Used the built-in `fs` and `path` modules.
 
 \- Created a File Manager.
@@ -50,7 +64,15 @@ This repository contains my completed Node.js activities, from project setup to 
 
 
 
+\## Set 2 – Activities N4 to N6
+
+
+
 \### N4 – Basic HTTP Server
+
+Folder: `set2/n4-server`
+
+
 
 \- Created an HTTP server using Node.js.
 
@@ -62,6 +84,10 @@ This repository contains my completed Node.js activities, from project setup to 
 
 \### N5 – REST-style API
 
+Folder: `set2/n5-api`
+
+
+
 \- Created a REST API for student records.
 
 \- Implemented GET, POST, PUT, and DELETE methods.
@@ -71,6 +97,10 @@ This repository contains my completed Node.js activities, from project setup to 
 
 
 \### N6 – Middleware and API Testing
+
+Folder: `set2/n6-middleware`
+
+
 
 \- Implemented custom logger middleware.
 
@@ -83,6 +113,8 @@ This repository contains my completed Node.js activities, from project setup to 
 
 
 \## Technologies Used
+
+
 
 \- Node.js
 
@@ -102,11 +134,25 @@ This repository contains my completed Node.js activities, from project setup to 
 
 \## How to Run
 
-Open the project folder in Visual Studio Code or PowerShell.
+
+
+Open the desired activity folder in Visual Studio Code or PowerShell.
 
 
 
 Run the appropriate JavaScript file using:
+
+
+
+```bash
+
+node index.js
+
+```
+
+
+
+For activities with a server:
 
 
 
@@ -118,15 +164,25 @@ node server.js
 
 
 
-For other activities, use the corresponding JavaScript filename.
+\## Screenshots
+
+
+
+Screenshots are organized by set:
+
+
+
+\- `screenshots/set1/` – N1, N2, and N3
+
+\- `screenshots/set2/` – N4, N5, and N6
 
 
 
 \## Author
 
+
+
 Rizalyn A. Cantong  
 
 BSIT 4A
-
-
 

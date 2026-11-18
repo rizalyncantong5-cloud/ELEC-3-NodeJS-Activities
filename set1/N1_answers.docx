@@ -1,0 +1,38 @@
+# N1 – Project Setup and Package Management
+## Answers
+
+**1. What is `name`?**
+
+The `name` field contains the name of the Node.js project. In my project, the name is `n1-setup`.
+
+**2. What is `version`?**
+
+The `version` field indicates the current version of the project. My project uses version `1.0.0`.
+
+**3. What is `description`?**
+
+The `description` field provides a short explanation of what the project is about. It describes my project as "My first Node.js project."
+
+**4. What is `main`?**
+
+The `main` field specifies the main entry point of the application. In my project, the main file is `index.js`.
+
+**5. What is `scripts`?**
+
+The `scripts` field contains commands that can be executed using npm. I added a `start` script with the command `node index.js` to run my project.
+
+**6. What are `dependencies`?**
+
+Dependencies are packages needed by the application to work. My project uses the `chalk` package.
+
+**7. What are `devDependencies`?**
+
+DevDependencies are packages used during development. My project uses `nodemon`, which automatically restarts the application when changes are made.
+
+**8. What is `node_modules`?**
+
+The `node_modules` folder contains the installed packages and their required files. It is automatically created when packages are installed using npm.
+
+## Conclusion
+
+In this activity, I learned how to create a Node.js project using `npm init`, install packages, configure the `package.json` file, and run the application using `npm start`.

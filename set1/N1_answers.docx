@@ -1,5 +1,4 @@
-# N1 – Project Setup and Package Management
-## Answers
+N1 – Project Setup and Package Management
 
 **1. What is `name`?**
 
@@ -33,6 +32,5 @@ DevDependencies are packages used during development. My project uses `nodemon`,
 
 The `node_modules` folder contains the installed packages and their required files. It is automatically created when packages are installed using npm.
 
-## Conclusion
 
 In this activity, I learned how to create a Node.js project using `npm init`, install packages, configure the `package.json` file, and run the application using `npm start`.

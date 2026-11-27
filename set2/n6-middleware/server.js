@@ -1,8 +1,8 @@
 
-// Name: Rizalyn A. Cantong
-// Section: BSIT 4A
-// Activity: N6 - Middleware and API Testing
-// Date: November 18, 2026
+Name: Rizalyn A. Cantong
+Section: BSIT 4A
+Activity: N6 - Middleware and API Testing
+Date: November 18, 2026
 
 const http = require("http");
 
@@ -12,7 +12,6 @@ let students = [
     { id: 3, name: "Juan Dela Cruz", section: "BSIT 4B", course: "BSIT" }
 ];
 
-// Middleware 1: Logger
 function loggerMiddleware(req, res, next) {
     console.log(
         `[${new Date().toLocaleString()}] ${req.method} ${req.url}`
@@ -20,13 +19,11 @@ function loggerMiddleware(req, res, next) {
     next();
 }
 
-// Middleware 2: JSON Header
 function jsonMiddleware(req, res, next) {
     res.setHeader("Content-Type", "application/json");
     next();
 }
 
-// Simple middleware runner
 function runMiddleware(req, res, middlewares, index = 0) {
     if (index < middlewares.length) {
         middlewares[index](req, res, () => {
@@ -37,7 +34,6 @@ function runMiddleware(req, res, middlewares, index = 0) {
     }
 }
 
-// API Routes
 function handleRoutes(req, res) {
     const url = new URL(req.url, "http://localhost:8002");
     const parts = url.pathname.split("/").filter(Boolean);

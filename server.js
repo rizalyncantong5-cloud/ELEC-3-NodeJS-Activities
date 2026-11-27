@@ -1,8 +1,8 @@
 
-// Name: Rizalyn A. Cantong
-// Section: BSIT 4A
-// Activity: N5 - REST-style API
-// Date: November 18, 2026
+Name: Rizalyn A. Cantong
+Section: BSIT 4A
+Activity: N5 - REST-style API
+Date: November 18, 2026
 
 const http = require("http");
 
@@ -18,13 +18,11 @@ const server = http.createServer((req, res) => {
 
     res.setHeader("Content-Type", "application/json");
 
-    // GET - Get all students
     if (req.method === "GET" && url.pathname === "/api/students") {
         res.writeHead(200);
         return res.end(JSON.stringify(students));
     }
 
-    // GET - Get one student
     if (req.method === "GET" &&
         parts.length === 3 &&
         parts[0] === "api" &&
@@ -41,7 +39,6 @@ const server = http.createServer((req, res) => {
         return res.end(JSON.stringify(student));
     }
 
-    // POST - Add a student
     if (req.method === "POST" && url.pathname === "/api/students") {
         let body = "";
 
@@ -75,7 +72,6 @@ const server = http.createServer((req, res) => {
         return;
     }
 
-    // PUT - Update a student
     if (req.method === "PUT" &&
         parts.length === 3 &&
         parts[0] === "api" &&
@@ -114,7 +110,6 @@ const server = http.createServer((req, res) => {
         return;
     }
 
-    // DELETE - Delete a student
     if (req.method === "DELETE" &&
         parts.length === 3 &&
         parts[0] === "api" &&

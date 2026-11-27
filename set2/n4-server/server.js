@@ -5,7 +5,6 @@ const PORT = 8000;
 
 const server = http.createServer((req, res) => {
 
-    // HOME PAGE
     if (req.url === "/") {
         res.writeHead(200, { "Content-Type": "text/html" });
         res.end(`
@@ -15,7 +14,6 @@ const server = http.createServer((req, res) => {
         `);
     }
 
-    // ABOUT PAGE
     else if (req.url === "/about") {
         res.writeHead(200, { "Content-Type": "text/html" });
         res.end(`
@@ -24,7 +22,6 @@ const server = http.createServer((req, res) => {
         `);
     }
 
-    // CONTACT PAGE
     else if (req.url === "/contact") {
         res.writeHead(200, { "Content-Type": "text/html" });
         res.end(`
@@ -35,7 +32,7 @@ const server = http.createServer((req, res) => {
         `);
     }
 
-    // 404 PAGE
+
     else {
         res.writeHead(404, { "Content-Type": "text/html" });
         res.end("<h1>404 - Page not found</h1>");

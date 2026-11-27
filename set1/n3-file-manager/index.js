@@ -4,7 +4,6 @@ const path = require("path");
 
 const filesFolder = path.join(__dirname, "files");
 
-// Create files folder if it does not exist
 if (!fs.existsSync(filesFolder)) {
     fs.mkdirSync(filesFolder);
 }
